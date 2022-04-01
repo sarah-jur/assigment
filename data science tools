@@ -1,0 +1,68 @@
+print('\033[1m' + 'My Jupyter Notebook on IBM Watson Studio' ) 
+My Jupyter Notebook on IBM Watson Studio
+
+In [169]:
+print('\033[94m' + 'Sarah' + '\033[0m'+'\n Business Ananlyst') 
+Sarah
+ Business Ananlyst
+ 
+In [180]:
+print('*I am intersted in Data Scinece because alaw you to explore the data\n solving problems, develop the complay or proudct*')
+*I am intersted in Data Scinece because alaw you to explore the data
+ solving problems, develop the complay or proudct*
+ 
+In [179]:
+### The below code is show to you the multiblcatin of three varibles 
+In [37]:
+a = 9
+b = 2 
+c = 0 
+d=a*b*c 
+print ("The result = " , d)
+The result =  0
+
+In [156]:
+import re
+file = '''
+ href="https://www.google.com" rel="license">cc </a> 
+                 '''
+matchs = re.findall(r'href="(http.+?)"', string=file)
+for link in matchs:
+    print(link)
+https://www.google.com
+
+In [144]:
+print('\033[1m' + 'Fruits' + '\033[0m') 
+
+destinations = ['Apple ', 'Orange ', 'Banana ']
+for i, dest in enumerate(destinations, 1):
+    print(" %d. %s " % (i,dest))
+Fruits
+ 1. Apple  
+ 2. Orange  
+ 3. Banana  
+ 
+In [92]:
+# define the dictionary
+dict1 = {}
+
+# insert data into dictionary
+dict1 = {(0, 0): 'Apple  | ', (0, 1): 6     , (0, 2):'      |   $15',
+		(1, 0): 'Orange | ', (1, 1): 23     , (1, 2):'     |   $80',
+		(2, 0): 'Banana | ', (2, 1):3       , (2, 2):'      |   $6'
+}
+# print the name of the columns explicitly.
+print(" FRUTIS ", " COUNTITY ", " PRICE " )
+
+# Iterate through the dictionary
+# to print the data.
+for i in range(3):
+	
+	for j in range(3):
+		print(dict1[(i, j)], end =' ')
+		
+	print()
+ FRUTIS   COUNTITY   PRICE 
+Apple  |  6       |   $15 
+Orange |  23      |   $80 
+Banana |  3       |   $6 
